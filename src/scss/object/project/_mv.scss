@@ -1,0 +1,80 @@
+@use 'foundation' as *;
+
+.mv {
+  background-image: url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.mv__wrap {
+  color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
+.mv__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  @include mq("md") {
+    font-size: 50px;
+    line-height: 1;
+  }
+  @include mq("lg") {
+    font-size: 68px;
+    line-height: 1;
+  }
+}
+
+.mv__subtitle {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  margin-top: 20px;
+  text-transform: capitalize;
+  @include mq("md") {
+    font-size: 24px;
+  }
+}
+
+.mv__btn {
+  border: 1px $white solid;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: $bold;
+  padding: 18px 73px;
+  margin: 30px auto 0;
+  width: 220px;
+  position: relative;
+  text-transform: uppercase;
+
+}
+
+.dli-caret-right {
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.4em 0.6em;
+  border-left-color: currentColor;
+  border-right: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+

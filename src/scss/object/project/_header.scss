@@ -1,0 +1,53 @@
+@use 'foundation' as *;
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 86px;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  height: inherit;
+  font-size: 20px;
+  color: $white;
+  display: flex;
+}
+
+.header__nav {
+  height: inherit;
+}
+
+.header__items {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+.header__item {
+  height: inherit;
+  margin-left: 25px;
+}
+
+.header__link {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
