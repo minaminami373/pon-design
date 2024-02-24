@@ -1,5 +1,9 @@
 @use 'foundation' as *;
 
+main {
+  margin-bottom: 100px;
+}
+
 .hamburger {
   position: fixed;
   z-index: 9999;
