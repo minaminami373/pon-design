@@ -1,20 +1,15 @@
 @use 'foundation' as *;
 
-main {
-  margin-bottom: 100px;
-}
-
-.hamburger {
+.c-hamburger {
   position: fixed;
   z-index: 9999;
-  top: 30px;
   right: 15px;
   width: 25px;
   height: 16px;
   cursor: pointer;
   }
 
-  .hamburger span {
+  .c-hamburger span {
   position: absolute;
   left: 0;
   display: inline-block;
@@ -24,38 +19,38 @@ main {
   transition: transform 0.3s, background-color;
   }
 
-  .hamburger span:first-child {
+  .c-hamburger span:first-child {
   top: 0;
   }
 
-  .hamburger span:nth-child(2) {
+  .c-hamburger span:nth-child(2) {
   top: 8px;
   transition: opacity 0.3s;
   }
 
-  .hamburger span:nth-child(3) {
+  .c-hamburger span:nth-child(3) {
   top: 16px;
   }
 
-  .hamburger.is-open {
+  .c-hamburger.is-open {
   right: 20px;
   top: 32px;
   }
 
-  .hamburger.is-open span {
+  .c-hamburger.is-open span {
   background-color: $white;
   }
 
-  .hamburger.is-active span:first-child {
+  .c-hamburger.is-active span:first-child {
   top: 15px;
   transform: rotate(-45deg);
   }
 
-  .hamburger.is-active span:nth-child(2) {
+  .c-hamburger.is-active span:nth-child(2) {
   opacity: 0;
   }
 
-  .hamburger.is-active span:nth-child(3) {
+  .c-hamburger.is-active span:nth-child(3) {
   top: 15px;
   transform: rotate(45deg);
   }

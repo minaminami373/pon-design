@@ -1,0 +1,26 @@
+@use 'foundation' as *;
+
+.p-header-nav__items {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.p-header-nav__item {
+  height: inherit;
+  margin-left: 25px;
+}
+
+.p-header-nav__link {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-size: 14px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}

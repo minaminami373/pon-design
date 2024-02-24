@@ -20,72 +20,73 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <link rel="apple-touch-icon" href="">
-  <!-- JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <script src="/js/script.js" defer></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/css/style.css" />
+    <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script defer src="/js/script.js"></script>
 </head>
 <body>
-  <header class="header js-header">
-    <div class="header__inner inner">
-      <a href="#index.html"><h1 class="header__logo">pon design</h1></a>
-      <nav class="header__nav sp-none">
-        <ul class="header__items">
-        <li class="header__item">
-          <a href="#news" class="header__link">news</a>
+  <header class="l-header p-header js-header">
+    <div class="p-header__inner inner">
+      <h1 class="p-header__logo">
+        <a href="" class="p-header__logolink">pon design</a>
+      </h1>
+      <nav class="p-header__nav p-header-nav sp-none">
+        <ul class="p-header-nav__items">
+        <li class="p-header-nav__item">
+          <a href="#news" class="p-header-nav__link">news</a>
         </li>
-        <li class="header__item">
-          <a href="#service" class="header__link">service</a>
+        <li class="p-header-nav__item">
+          <a href="#service" class="p-header-nav__link">service</a>
         </li>
-        <li class="header__item">
-          <a href="#works" class="header__link">works</a>
+        <li class="p-header-nav__item">
+          <a href="#works" class="p-header-nav__link">works</a>
         </li>
-        <li class="header__item">
-          <a href="#company" class="header__link">company</a>
+        <li class="p-header-nav__item">
+          <a href="#company" class="p-header-nav__link">company</a>
         </li>
-        <li class="header__item">
-          <a href="#recruit" class="header__link">recruit</a>
+        <li class="p-header-nav__item">
+          <a href="#recruit" class="p-header-nav__link">recruit</a>
         </li>
-        <li class="header__item">
-          <a href="#contact" class="header__link header__link--contact">contact</a>
+        <li class="p-header-nav__item">
+          <a href="#contact" class="p-header-nav__link p-header-nav__link--contact">contact</a>
         </li>
         </ul>
       </nav>
-    </div>
-    <div class="hamburger js-hamburger sp-show">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="drawer-menu js-drawer">
-      <div class="drawer-menu__inner">
-        <ul class="drawer-menu__items">
-          <li class="drawer-menu__item">
-            <a href="#news" class="drawer-menu__link">news</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a href="#service" class="drawer-menu__link">service</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a href="#works" class="drawer-menu__link">works</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a href="#company" class="drawer-menu__link">company</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a href="#recruit" class="drawer-menu__link">recruit</a>
-          </li>
-          <li class="drawer-menu__item">
-            <a href="#contact" class="drawer-menu__link">contact</a>
-          </li>
-        </ul>
+      <div class="c-hamburger js-hamburger sp-show">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <nav class="drawer-menu js-drawer">
+        <div class="drawer-menu__inner">
+          <ul class="drawer-menu__items">
+            <li class="drawer-menu__item">
+              <a href="#news" class="drawer-menu__link">news</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#service" class="drawer-menu__link">service</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#works" class="drawer-menu__link">works</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#company" class="drawer-menu__link">company</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#recruit" class="drawer-menu__link">recruit</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#contact" class="drawer-menu__link">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
   <main>
@@ -104,12 +105,30 @@
       <h2 class="c-section-header__title">contact</h2>
       <p class="c-section-header__subtitle">お問い合わせ</p>
     </div>
-    <div class="c-section-header">
-      <h2 class="c-section-header__title">contact</h2>
-      <p class="c-section-header__subtitle">お問い合わせ</p>
-    </div>
 
     <a href="" class="c-btn">more</a>
+
+    <div class="l-footer p-footer">
+      <div class="p-footer__inner">
+        <nav class="p-footer__nav p-footer-nav">
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item"><a href="">home</a></li>
+            <li class="p-footer-nav__item"><a href="">news</a></li>
+            <li class="p-footer-nav__item"><a href="">service</a></li>
+            <li class="p-footer-nav__item"><a href="">works</a></li>
+            <li class="p-footer-nav__item"><a href="">company</a></li>
+            <li class="p-footer-nav__item"><a href="">recruit</a></li>
+            <li class="p-footer-nav__item"><a href="">contact</a></li>
+          </ul>
+        </nav>
+        <div class="p-footer__copyright">
+          <small>&copy;pon&nbsp;design</small>
+        </div>
+
+      </div>
+
+
+    </div>
   </main>
 </body>
 </html>

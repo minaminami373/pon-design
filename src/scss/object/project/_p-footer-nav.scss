@@ -1,0 +1,21 @@
+@use 'foundation' as *;
+
+.p-footer-nav {
+
+}
+
+.p-footer-nav__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.p-footer-nav__item a {
+  color: $white;
+  font-weight: $bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+}
