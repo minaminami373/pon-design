@@ -1,0 +1,12 @@
+@use 'foundation' as *;
+
+.c-mv-btn {
+  border: 1px $white solid;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: $bold;
+  padding: 18px 73px;
+  position: relative;
+  text-transform: uppercase;
+
+}

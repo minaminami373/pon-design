@@ -31,6 +31,8 @@ $padding-sp: 20px; // スマホ用余白設定
 
 // フォント
 $font-family-base: 'Montserrat', 'Noto Sans JP', sans-serif; // ベースフォント設定
+$font-en: 'Montserrat';
+$font-jp:'Noto Sans JP';
 
 $regular: 400;
 $medium: 500;
@@ -44,6 +46,7 @@ $base-font-size: 16px;
 // Color
 $black:#000;
 $white: #fff;
+$grey:#E8E8E8;
 $black2:#120E19;
 $purple: #391E88;
 $purple2:#21054D;

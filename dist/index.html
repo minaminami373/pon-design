@@ -90,15 +90,59 @@
     </div>
   </header>
   <main>
-    <div class="mv">
-      <div class="mv__inner">
-        <div class="mv__wrap">
-          <h1 class="mv__title">web&nbsp;design&nbsp;<br class="sp-show">specialist</h1>
-          <p class="mv__subtitle">お客様の夢を叶える<br class="sp-show">webサイトを制作</p>
-          <p class="mv__btn">contact<span class="dli-caret-right"></span></p>
+    <section class="l-mv p-mv">
+      <div class="p-mv__inner">
+        <div class="p-mv__header">
+          <h1 class="p-mv__title">web&nbsp;design&nbsp;<br class="sp-show">specialist</h1>
+          <p class="p-mv__subtitle">お客様の夢を叶える<br class="sp-show">webサイトを制作</p>
+          <p class="p-mv__btn"><a href="" class="c-mv-btn">contact</a></p>
         </div>
+        <div class="p-mv__scroll"><span>scroll</span></div>
       </div>
-    </div>
+    </section>
+    <section class="l-topNews p-news">
+      <div class="p-news__inner l-inner">
+        <div class="p-news__title">
+          <div class="c-section-header">
+            <h2 class="c-section-header__title">news</h2>
+            <p class="c-section-header__subtitle">お知らせ</p>
+          </div>
+        </div>
+        <div class="p-news__items">
+          <!--ループ処理開始-->
+          <div class="p-news__item p-news-content">
+            <div class="p-news-content__meta">
+              <time datetime="2022-03-04" class="p-news-content__date">2022.03.04</time>
+              <div class="p-news-content__category">お知らせ</div>
+            </div>
+            <div class="p-news-content__link">
+              <a href="" class="p-news-content__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+            </div>
+          </div>
+          <div class="p-news__item p-news-content">
+            <div class="p-news-content__meta">
+              <time datetime="2022-01-25" class="p-news-content__date">2022.01.25</time>
+              <div class="p-news-content__category">制作実績</div>
+            </div>
+            <div class="p-news-content__link">
+              <a href="" class="p-news-content__text">Smoothiesta様のWebサイトを制作いたしました</a>
+            </div>
+          </div>
+          <div class="p-news__item p-news-content">
+            <div class="p-news-content__meta">
+              <time datetime="2022-01-20" class="p-news-content__date">2022.01.20</time>
+              <div class="p-news-content__category">採用</div>
+            </div>
+            <div class="p-news-content__link">
+              <a href="" class="p-news-content__text">Webデザイナーを１名募集中です！</a>
+            </div>
+          </div>
+        </div>
+        <!--ループ終了-->
+
+
+      </div>
+    </section>
 
 
     <div class="c-section-header">
@@ -108,7 +152,7 @@
 
     <a href="" class="c-btn">more</a>
 
-    <div class="l-footer p-footer">
+    <footer class="l-footer p-footer">
       <div class="p-footer__inner">
         <nav class="p-footer__nav p-footer-nav">
           <ul class="p-footer-nav__items">
@@ -128,7 +172,7 @@
       </div>
 
 
-    </div>
+    </footer>
   </main>
 </body>
 </html>

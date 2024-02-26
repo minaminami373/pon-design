@@ -1,0 +1,11 @@
+@use 'foundation' as *;
+
+
+.p-news__items {
+  margin-top: 32px;
+}
+
+.p-news__item +  .p-news__item {
+  margin-top: 40px;
+}
+
