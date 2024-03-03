@@ -136,6 +136,10 @@ a {
   }
 }
 
+.l-company {
+  margin-top: 50px;
+}
+
 .l-inner {
   width: 100%;
   padding-left: 20px;
@@ -148,6 +152,15 @@ a {
     max-width: 1160px;
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+
+.l-service {
+  margin-top: 80px;
+}
+@media screen and (min-width: 768px) {
+  .l-service {
+    margin-top: 140px;
   }
 }
 
@@ -347,6 +360,87 @@ a {
   .sp-none {
     display: block;
   }
+}
+
+.p-card__img {
+  position: relative;
+}
+
+.p-card__img::before {
+  content: "";
+  display: block;
+  padding-top: 62.686567%;
+}
+
+.p-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-card__body {
+  margin-top: 14px;
+}
+
+.p-card__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.p-card__text {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  line-height: 1.79;
+  margin-top: 10px;
+}
+
+.p-company {
+  padding-top: 32px;
+  padding-bottom: 96px;
+  background-image: url(/images/common/company-bgbg.png);
+  background-repeat: no-repeat;
+  background-position: -15px 0;
+  background-size: cover;
+}
+
+.p-company__contents {
+  margin-top: 30px;
+}
+
+.p-company__subtitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.p-company__yellow {
+  background: linear-gradient(180deg, transparent 0%, transparent 60%, #F5F534 75%, #F5F534 90%, transparent 90%, transparent 100%);
+}
+
+.p-company__content {
+  margin-top: 40px;
+}
+
+.p-company__text {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  line-height: 1.79;
+}
+
+.p-company__btn {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .p-footer-nav__items {
@@ -572,6 +666,14 @@ a {
 }
 
 .p-news__item + .p-news__item {
+  margin-top: 40px;
+}
+
+.p-service__items {
+  margin-top: 32px;
+}
+
+.p-service__item + .p-service__item {
   margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

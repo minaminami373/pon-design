@@ -1,0 +1,50 @@
+@use 'foundation' as *;
+
+.p-company {
+  padding-top: 32px;
+  padding-bottom: 96px;
+  background-image: url(/images/common/company-bgbg.png);
+  background-repeat: no-repeat;
+  background-position: -15px 0;
+  background-size: cover;
+}
+
+.p-company__contents {
+  margin-top: 30px;
+}
+
+.p-company__subtitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: $semi-bold;
+  line-height: 1.5;
+}
+
+.p-company__yellow {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 60%,
+    #F5F534 75%,
+    #F5F534 90%,
+    transparent 90%,
+    transparent 100%
+      );
+}
+
+.p-company__content {
+  margin-top: 40px;
+}
+
+.p-company__text {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: $light;
+  line-height: 1.79;
+}
+
+.p-company__btn {
+  text-align: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,10 @@
+@use 'foundation' as *;
+
+.p-service__items {
+  margin-top: 32px;
+}
+
+.p-service__item + .p-service__item {
+  margin-top: 40px;
+}
+
