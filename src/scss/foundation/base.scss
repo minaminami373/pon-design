@@ -6,7 +6,7 @@ html {
   @if $break-flg == 0 {
     // 375px以下
     @media (max-width: 375px) {
-      font-size: vw(375, strip-unit($base-font-size));
+      font-size: vw(375, 16);
     }
 
     // 375px〜767px

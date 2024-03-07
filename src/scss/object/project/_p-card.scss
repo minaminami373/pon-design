@@ -1,8 +1,5 @@
 @use 'foundation' as *;
 
-.p-card {
-
-}
 
 .p-card__img {
   position: relative;
@@ -42,5 +39,6 @@
   font-weight: $light;
   line-height: 1.79;
   margin-top: 10px;
+  text-align: center;
 }
 

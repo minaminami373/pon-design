@@ -26,19 +26,19 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.3333333333vw;
+    font-size: 1.4414414414vw;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1110px) {
   html {
     font-size: 16px;
   }
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #000;
 }
 
 a {

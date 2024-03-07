@@ -2,6 +2,10 @@
 
 .p-news-content {
   font-weight: $regular;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .p-news-content__meta {
@@ -32,4 +36,8 @@
   font-size: 14px;
   line-height: calc(25.2/14);
   margin-top: 5px;
+  @include mq("md") {
+    margin-left: 20px;
+    margin-top: 0;
+  }
 }

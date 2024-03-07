@@ -1,0 +1,71 @@
+@use 'foundation' as *;
+
+.p-works__content {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, transparent 0%, transparent 33%, #f0f0f0 33%, #f0f0f0 100%);
+    padding: 60px 0;
+  }
+}
+
+.p-works__text-block {
+  margin-top: 30px;
+
+}
+
+.p-works__text {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: $light;
+  line-height: 1.79;
+}
+
+.p-works__text-body {
+  margin-top: -116px;
+  background-color: #f0f0f0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 156px;
+  padding-bottom: 60px;
+  @include mq("md") {
+    width: 40.5%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.p-works__btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-works__images {
+  position: relative;
+  @include mq("md") {
+    width: 59.5%;
+  }
+}
+
+.p-works__img {
+  position: relative;
+}
+// 幅と高さはいじらない
+
+.p-works__img::before {
+  content: "";
+  display: block;
+  padding-top: 68.955%;//高さわる横
+}
+
+.p-works__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

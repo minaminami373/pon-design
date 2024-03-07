@@ -1,11 +1,24 @@
 @use 'foundation' as *;
 
+.p-news__inner {
+  @include mq("md") {
+   display: flex;
+   justify-content: center;
+}
+}
 
 .p-news__items {
   margin-top: 32px;
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
 
 .p-news__item +  .p-news__item {
   margin-top: 40px;
+  @include mq("md") {
+    margin-top: 15px;
+  }
 }
 

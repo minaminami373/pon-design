@@ -6,7 +6,11 @@
   background-image: url(/images/common/company-bgbg.png);
   background-repeat: no-repeat;
   background-position: -15px 0;
-  background-size: cover;
+  background-size: contain;
+  @include mq("md") {
+    background-image: url(/images/common/company-pc.jpg);
+    background-position: center;
+  }
 }
 
 .p-company__contents {
