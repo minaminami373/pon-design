@@ -9,7 +9,6 @@
   position: relative;
 }
 
-
 .p-mv__header {
   color: $white;
   position: absolute;
@@ -17,21 +16,20 @@
   left: 50px;
   transform: translateY(-50%);
   @include mq("md") {
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
   }
 }
 
 .p-mv__title {
   text-transform: uppercase;
   font-size: 40px;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
+  letter-spacing: 0.01em;
+  line-height: 1.219;
   @include mq("md") {
-    font-size:  55px;
-    line-height: 1;
-  }
-  @include mq("lg") {
-    font-size: 68px;
+    font-size:  50px;
   }
 }
 
