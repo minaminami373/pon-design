@@ -1,0 +1,33 @@
+@use 'foundation' as *;
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+display: inline-flex;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+	color: $white;
+	background-color: $purple4;
+  transition: 0.3 ease;
+}
+
+.wp-pagenavi a:hover{
+	color: #4F31A5;
+	background-color: #F1EBF8;
+  opacity: 1;
+  }
+
+
+.wp-pagenavi span.current{
+	color: #4F31A5;
+	background-color: #F1EBF8;
+	font-weight: bold;
+    }
