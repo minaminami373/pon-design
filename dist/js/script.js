@@ -32,7 +32,7 @@ $(function () {
 
   // スクロールするとロゴの色変更
 $(window).on("scroll", function () {
-  const sliderHeight = $(".p-mv").height();
+  const sliderHeight = $(".js-mv").height();
   if (sliderHeight - 30 < $(this).scrollTop()) {
     $(".js-header").addClass("headerColorScroll");
   } else {
