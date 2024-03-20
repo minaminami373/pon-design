@@ -7,7 +7,13 @@
   left: 0;
   height: 64px;
   width: 100%;
-  background-color: $purple2;
+  background-color: transparent;
+}
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.p-header.headerColorScroll {
+  background-color: $purple;
+  transition: color 0.4s ease-out;
 }
 
 .p-header__inner {
@@ -37,4 +43,3 @@
 .p-header__nav {
   height: inherit;
 }
-

@@ -6,10 +6,20 @@
   background-image: url(/images/common/company-bgbg.png);
   background-repeat: no-repeat;
   background-position: -15px 0;
-  background-size: contain;
+  background-size: cover;
   @include mq("md") {
     background-image: url(/images/common/company-pc.jpg);
     background-position: center;
+  }
+}
+
+.p-company--subPage {
+  background-size: contain;
+  @include mq("md") {
+    background-image: url(/images/common/page-comapny-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
   }
 }
 
@@ -52,3 +62,48 @@
   text-align: center;
   margin-top: 30px;
 }
+
+.p-company__message {
+  margin-top: 60px;
+  @include mq("md") {
+    display: flex;
+    margin-top: 160px;
+  }
+}
+
+.p-company__message-image {
+  aspect-ratio: 335 / 248;
+  @include mq("md") {
+    max-width: 445px;
+    width: 100%;
+  }
+}
+
+
+
+.p-company__message-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.p-company__message-text {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-weight: $light;
+  @include mq("md") {
+    max-width: 605px;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+
+}
+
+.p-company__message-text  p:not(:first-child){
+  margin-top: 30px;
+}
+
+

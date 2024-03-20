@@ -17,3 +17,12 @@ $(function () {
   });
 });
 
+// $(function () {
+//   $(window).on('scroll', function () {
+//     if ($('.fv').height()  < $(this).scrollTop()) {
+//         $('.js-header').addClass('p-header__change-color');
+//     } else {
+//         $('.js-header').removeClass('p-header__change-color');
+//     }
+//   });
+// });
