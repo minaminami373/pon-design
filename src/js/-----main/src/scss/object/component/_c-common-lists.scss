@@ -1,0 +1,10 @@
+@use 'foundation' as *;
+
+.c-common-lists__list {
+  list-style: circle;
+}
+
+.c-common-lists__list ol {
+  list-style: disc;
+  list-style-position: inside;
+}

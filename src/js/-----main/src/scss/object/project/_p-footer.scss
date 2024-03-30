@@ -1,0 +1,22 @@
+@use 'foundation' as *;
+
+.p-footer {
+  background-color: $black2;
+  padding: 60px 0 20px;
+}
+
+.p-footer__inner {
+  padding: 0 30px;
+  margin: auto;
+}
+
+.p-footer__copyright {
+  color: $white;
+  font-weight: $regular;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-top: 40px;
+  text-align: center;
+}

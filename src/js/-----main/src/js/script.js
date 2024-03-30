@@ -13,14 +13,16 @@ $(function () {
     loop: true,
     autoplay: {
       delay: 2000,
-    }
-  });
-
-  $(window).on('scroll', function () {
-    if ($('.js-mv').height() < $(this).scrollTop()) {
-        $('.js-header').addClass('headerColorScroll');
-  } else {
-        $('.js-header').removeClass('headerColorScroll');
-  }
+    },
   });
 });
+
+// $(function () {
+//   $(window).on('scroll', function () {
+//     if ($('.fv').height()  < $(this).scrollTop()) {
+//         $('.js-header').addClass('p-header__change-color');
+//     } else {
+//         $('.js-header').removeClass('p-header__change-color');
+//     }
+//   });
+// });

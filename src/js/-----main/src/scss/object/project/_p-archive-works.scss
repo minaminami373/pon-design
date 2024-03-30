@@ -1,0 +1,50 @@
+@use 'foundation' as *;
+
+.p-archive-works__inner.l-inner {
+  padding: 0 15px;
+
+}
+
+.p-archive-works__items {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 40px;
+  @include mq("md") {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px 30px;
+
+  }
+}
+
+
+.p-archive-works__image {
+  position: relative;
+}
+
+.p-archive-works__image::before {
+  content: "";
+  display: block;
+  padding-top: 68%;
+}
+
+.p-archive-works__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-archive-works__title {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.p-archive-works__name {
+  font-size: 16px;
+  font-weight: $light;
+  line-height: calc(28.8 / 16);
+  letter-spacing: 0.05em;
+}
