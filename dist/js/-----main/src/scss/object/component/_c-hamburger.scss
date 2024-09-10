@@ -1,0 +1,106 @@
+@use 'foundation' as *;
+
+.c-hamburger {
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  width: 25px;
+  height: 16px;
+  cursor: pointer;
+  }
+
+  .c-hamburger span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: $white;
+  transition: transform 0.3s, background-color;
+  }
+
+  .c-hamburger span:first-child {
+  top: 0;
+  }
+
+  .c-hamburger span:nth-child(2) {
+  top: 8px;
+  transition: opacity 0.3s;
+  }
+
+  .c-hamburger span:nth-child(3) {
+  top: 16px;
+  }
+
+  .c-hamburger.is-open {
+  right: 20px;
+  top: 32px;
+  }
+
+  .c-hamburger.is-open span {
+  background-color: $white;
+  }
+
+  .c-hamburger.is-active span:first-child {
+  top: 15px;
+  transform: rotate(-45deg);
+  }
+
+  .c-hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+  }
+
+  .c-hamburger.is-active span:nth-child(3) {
+  top: 15px;
+  transform: rotate(45deg);
+  }
+
+  .drawer-menu {
+    position: absolute;
+    display: none; //これがないと常に空いた状態になってしまう
+    z-index: 5000;
+    top: 3px;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: -moz-linear-gradient(top, $purple4, $purple3);
+    background: -webkit-linear-gradient(top, $purple4, $purple3);
+    background: linear-gradient(to bottom, $purple4, $purple3);
+    }
+
+    .drawer-menu__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    }
+
+    .drawer-menu__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .drawer-menu__item {
+    display: inline-block;
+    }
+
+    .drawer-menu__item:not(:first-child) {
+    margin-top: 20px;
+    }
+
+    .drawer-menu__link {
+      text-transform: uppercase;
+    color: $white;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-weight: $bold;
+    display: inline-block;
+    width: 200px;
+    padding-bottom: 25px;
+    text-align: center;
+    }

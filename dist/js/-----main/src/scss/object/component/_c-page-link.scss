@@ -1,0 +1,53 @@
+@use 'foundation' as *;
+
+.c-page-link {
+  color: $purple;
+  margin-top: 40px;
+}
+
+.c-page-link__flex {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #BBAED5;
+  border-bottom: 1px solid #BBAED5;
+}
+
+.c-page-link__prev, .c-page-link__next {
+  width: 50%;
+  position: relative;
+  padding: 0 20px;
+  font-size: 12px;
+  @include mq("md") {
+    font-size: 14px;
+  }
+
+}
+
+.c-page-link__prev {
+  margin-right: auto;
+}
+
+.c-page-link__prev::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #BBAED5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c-page-link__next {
+  margin-left: auto;
+}
+
+.c-page-link__archive {
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+
+}
+

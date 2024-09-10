@@ -1,0 +1,14 @@
+@use 'foundation' as *;
+
+.l-inner{
+  width: 100%;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md"){
+    max-width: 1160px;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+  }
+}

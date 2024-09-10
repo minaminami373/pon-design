@@ -1,0 +1,12 @@
+@use 'foundation' as *;
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -25px;
+  text-align: right;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $purple;
+}

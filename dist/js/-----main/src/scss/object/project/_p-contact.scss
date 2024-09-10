@@ -1,0 +1,23 @@
+@use 'foundation' as *;
+
+.p-contact {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.p-contact__text-block {
+  margin-top: 30px;
+}
+
+.p-contact__text {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: $light;
+  line-height: 1.79;
+}
+
+.p-contact__btn {
+  margin-top: 30px;
+  text-align: center;
+}

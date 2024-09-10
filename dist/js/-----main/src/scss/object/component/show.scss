@@ -1,0 +1,14 @@
+@use 'foundation' as *;
+
+.sp-show {
+  @include mq("md") {
+  display: none;
+    }
+}
+
+.sp-none {
+  display: none;
+  @include mq("md") {
+    display: block;
+      }
+}

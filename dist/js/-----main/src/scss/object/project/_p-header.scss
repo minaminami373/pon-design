@@ -1,0 +1,45 @@
+@use 'foundation' as *;
+
+.p-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.p-header.headerColorScroll {
+  background-color: $purple;
+  transition: color 0.4s ease-out;
+}
+
+.p-header__inner {
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  @include mq("md") {
+    padding: 0 25px;
+  }
+}
+
+.p-header__logo {
+  height: inherit;
+}
+
+.p-header__logolink {
+  font-size: 20px;
+  color: $white;
+  text-transform: uppercase;
+  height: inherit;
+  align-items: center;
+  display: flex;
+}
+
+.p-header__nav {
+  height: inherit;
+}

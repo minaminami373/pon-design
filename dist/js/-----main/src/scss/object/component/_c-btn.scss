@@ -1,0 +1,18 @@
+@use 'foundation' as *;
+
+.c-btn {
+background: linear-gradient(90deg, $purple4, $purple3);
+color: $white;
+text-transform: uppercase;
+font-weight: $bold;
+font-size: 20px;
+padding: 18px 85px;
+letter-spacing: 0.1em;
+line-height: calc(19.6/14);
+display: inline-block;
+border-radius: 50px;
+}
+
+.c-btn:hover {
+  background-color: #0056b3;
+}

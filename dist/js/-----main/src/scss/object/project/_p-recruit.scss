@@ -1,0 +1,65 @@
+@use 'foundation' as *;
+
+.p-recruit__inner.l-inner {
+  padding: 0;
+}
+
+.p-recruit__inner {
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.p-recruit__image {
+  margin-top: 30px;
+  position: relative;
+  @include mq("md") {
+    width: 60%;
+    margin-top: 0;
+  }
+}
+
+.p-recruit__image::before {
+  content: "";
+  display: block;
+  padding-top: 37.3333%
+}
+
+.p-recruit__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-recruit__contents {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  @include mq("md") {
+    width: 40%;
+    padding: 70px 0;
+  }
+}
+
+.p-recruit__text-block {
+  margin-top: 30px;
+}
+
+.p-recruit__text {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: $light;
+  line-height: 1.79;
+}
+
+.p-recruit__btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
